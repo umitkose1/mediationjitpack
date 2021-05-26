@@ -1,4 +1,4 @@
-package com.hmscl.huawei.ads.mediation_adapter_admob
+package com.hmscl.huawei.admob_mediation
 
 import android.content.Context
 import android.os.Bundle
@@ -8,11 +8,11 @@ import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.mediation.*
 import com.google.android.gms.ads.mediation.customevent.*
 import com.google.android.gms.ads.reward.mediation.MediationRewardedVideoAdAdapter
-import com.hmscl.huawei.ads.mediation_adapter_admob.BannerAds.HuaweiCustomEventBannerEventForwarder
-import com.hmscl.huawei.ads.mediation_adapter_admob.InterstitialAds.HuaweiCustomEventInterstitialEventForwarder
-import com.hmscl.huawei.ads.mediation_adapter_admob.NativeAds.HuaweiCustomEventNativeAdsEventForwarder
-import com.hmscl.huawei.ads.mediation_adapter_admob.NativeAds.HuaweiCustomEventNativeAdsLoadedEventForwarder
-import com.hmscl.huawei.ads.mediation_adapter_admob.RewardedAds.HuaweiCustomEventRewardedAdEventForwarder
+import com.hmscl.huawei.admob_mediation.BannerAds.HuaweiCustomEventBannerEventForwarder
+import com.hmscl.huawei.admob_mediation.InterstitialAds.HuaweiCustomEventInterstitialEventForwarder
+import com.hmscl.huawei.admob_mediation.NativeAds.HuaweiCustomEventNativeAdsEventForwarder
+import com.hmscl.huawei.admob_mediation.NativeAds.HuaweiCustomEventNativeAdsLoadedEventForwarder
+import com.hmscl.huawei.admob_mediation.RewardedAds.HuaweiCustomEventRewardedAdEventForwarder
 import com.huawei.hms.ads.AdParam
 import com.huawei.hms.ads.BannerAdSize
 import com.huawei.hms.ads.InterstitialAd

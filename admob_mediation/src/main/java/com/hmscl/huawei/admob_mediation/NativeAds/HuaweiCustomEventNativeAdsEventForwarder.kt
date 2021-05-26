@@ -1,8 +1,12 @@
-package com.hmscl.huawei.ads.mediation_adapter_admob.NativeAds
+package com.hmscl.huawei.admob_mediation.NativeAds
 
-import com.huawei.hms.ads.AdListener
+import com.google.android.gms.ads.formats.NativeAdOptions
+import com.google.android.gms.ads.mediation.customevent.CustomEventNativeListener
 
-open class HuaweiCustomEventNativeAdsListener: AdListener() {
+class HuaweiCustomEventNativeAdsEventForwarder (
+    private val listener: CustomEventNativeListener,
+    private val options: NativeAdOptions
+    ) : HuaweiCustomEventNativeAdsListener() {
     override fun onAdClosed() {
         super.onAdClosed()
     }
@@ -24,7 +28,7 @@ open class HuaweiCustomEventNativeAdsListener: AdListener() {
     }
 
     override fun onAdClicked() {
-        super.onAdClicked()
+        listener.onAdClicked()
     }
 
     override fun onAdImpression() {

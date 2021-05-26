@@ -1,3 +1,3 @@
-include ':mylibrary'
+include ':admob_mediation'
 include ':app'
 rootProject.name = "mediationjitpack"

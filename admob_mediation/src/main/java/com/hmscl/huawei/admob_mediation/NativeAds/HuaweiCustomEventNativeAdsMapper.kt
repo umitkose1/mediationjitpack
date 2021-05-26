@@ -1,10 +1,11 @@
-package com.hmscl.huawei.ads.mediation_adapter_admob.NativeAds
+package com.hmscl.huawei.admob_mediation.NativeAds
 
 import android.content.Context
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import com.google.android.gms.ads.mediation.UnifiedNativeAdMapper
+import com.hmscl.huawei.admob_mediation.NativeAds.HuaweiCustomEventNativeAdsImageMapper
 import com.huawei.hms.ads.nativead.NativeAd
 
 class HuaweiCustomEventNativeAdsMapper(

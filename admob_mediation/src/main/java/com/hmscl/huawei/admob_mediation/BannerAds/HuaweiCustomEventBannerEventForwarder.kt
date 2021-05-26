@@ -1,25 +1,23 @@
-package com.hmscl.huawei.ads.mediation_adapter_admob.InterstitialAds
+package com.hmscl.huawei.admob_mediation.BannerAds
 
 import android.util.Log
 import com.google.android.gms.ads.AdError
 import com.google.android.gms.ads.mediation.customevent.CustomEventBannerListener
-import com.google.android.gms.ads.mediation.customevent.CustomEventInterstitialListener
 import com.huawei.hms.ads.AdListener
 import com.huawei.hms.ads.AdParam
-import com.huawei.hms.ads.InterstitialAd
 import com.huawei.hms.ads.banner.BannerView
 
-class HuaweiCustomEventInterstitialEventForwarder(
-        private var listener: CustomEventInterstitialListener,
-        private var huaweiInterstitialView: InterstitialAd
+class HuaweiCustomEventBannerEventForwarder(
+        private var listener: CustomEventBannerListener,
+        private var huaweiBannerView: BannerView
 ) : AdListener() {
     override fun onAdLoaded() {
-        listener.onAdLoaded()
+        listener.onAdLoaded(huaweiBannerView)
     }
 
     override fun onAdFailed(errorCode: Int) {
         Log.e("error--",errorCode.toString())
-        listener.onAdFailedToLoad(AdError(AdParam.ErrorCode.INNER, AdParam.ErrorCode.INNER.toString(),"HuaweiInterstitialAds"))
+        listener.onAdFailedToLoad(AdError(AdParam.ErrorCode.INNER, AdParam.ErrorCode.INNER.toString(),"HuaweiBannerAds"))
     }
 
     override fun onAdClosed() {

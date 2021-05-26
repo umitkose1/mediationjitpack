@@ -1,4 +1,4 @@
-package com.hmscl.huawei.ads.mediation_adapter_admob.NativeAds
+package com.hmscl.huawei.admob_mediation.NativeAds
 
 import android.content.Context
 import com.google.android.gms.ads.formats.NativeAdOptions

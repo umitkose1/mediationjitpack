@@ -1,4 +1,4 @@
-package com.hmscl.huawei.ads.mediation_adapter_admob.RewardedAds
+package com.hmscl.huawei.admob_mediation.RewardedAds
 
 import com.huawei.hms.ads.reward.RewardAdLoadListener
 
